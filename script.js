@@ -1,18 +1,42 @@
 function sum(first,next){
-    let num=first +next
-    return num.toFixed(2)
+    let num = first + next;
+    num = num.toFixed(5);
+    let snum = String(num);
+    while (snum.slice(-1) === "0") {
+        snum = snum.slice(0, -1);
+    }
+    let fnum = Number(snum);
+    return fnum;
 }
 function sub(first, next){
-    let num=first -next
-    return num.toFixed(2)
+    let num = first - next;
+    num = num.toFixed(5);
+    let snum = String(num);
+    while (snum.slice(-1) === "0") {
+        snum = snum.slice(0, -1);
+    }
+    let fnum = Number(snum);
+    return fnum;
 }
 function divide(first,next){
-    let num=first /next
-    return num.toFixed(2)
+    let num = first / next;
+    num = num.toFixed(5);
+    let snum = String(num);
+    while (snum.slice(-1) === "0") {
+        snum = snum.slice(0, -1);
+    }
+    let fnum = Number(snum);
+    return fnum;
 } 
 function multiply(first, next){
-    let num=first *next
-    return num.toFixed(2)
+    let num = first * next;
+    num = num.toFixed(5);
+    let snum = String(num);
+    while (snum.slice(-1) === "0") {
+        snum = snum.slice(0, -1);
+    }
+    let fnum = Number(snum);
+    return fnum;
 }
 
 function operate(first, oper, next){
